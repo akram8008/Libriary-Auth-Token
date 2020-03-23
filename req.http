@@ -1,0 +1,43 @@
+POST http://localhost:9999/admin/books
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data;
+Content-Type: application/json
+
+
+###daa520
+
+
+POST http://localhost:9999/admin/books/remove
+Content-Type: application/json
+
+{
+"Id":10
+}
+
+
+###daa520
+
+POST http://localhost:9999/admin/book/show
+Content-Type: application/json
+
+{
+  "Id":10
+
+}
+
+
+######
+
+POST http://localhost:8888/login
+Content-Type: application/json
+
+{
+  "Name": "Akram123",
+  "Login": "akram8008",
+  "Password": "8008",
+  "Role": "admin"
+}
+
+###
